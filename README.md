@@ -10,4 +10,7 @@ Upon successful search of a pokemon the sprite of the pokemon appears along with
 
 Towards the bottom of the page there's a button that says "Noise" upon clicking it, it will play the pokemon's cry that was selected.
 
-If a pokemon is entered that doesn't exist, then an error message will pop up and the user can try again
+If a pokemon is entered that doesn't exist, then an error message will pop up and the user can try again.
+
+Features to work on:
+Evolution level - If the pokemon entered can be evolved, it will show what level that pokemon will evolve at (E.g. Squirtle will evolve at level 16 to Wartortle, Wartortle evolves at level 36 to Blastoise)
