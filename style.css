@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+#pokemon-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #007bac;
+}
+
+#pokemon-details {
+    display: none;
+}
+
+#pokemon-imaage {
+    max-width: 200px;
+    margin-bottom: 10px;
+    height: 8rem;
+}
+
+#pokemon-moves {
+    list-style-type: none;
+    padding: 0;
+}
+
+#hear-sound {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#error-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
