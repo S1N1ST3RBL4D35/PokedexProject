@@ -50,6 +50,15 @@ async function fetchPokemonData(pokemonName) {
       }
     });
 
+    //Get the Pokemon Type(s)
+    pokemonType.textContent = '';
+    data.types.forEach((type, index) => {
+      pokemonType.textContent += type.type.name;
+      if (index < data.types.length - 1) {
+        pokemonType.textContent += ' / ';
+      }
+    });
+
     // Store the cry URL
     currentPokemonCryUrl = data.cries.latest; 
 
