@@ -4,6 +4,7 @@ const pokemonDetails = document.getElementById('pokemon-details');
 const pokemonImage = document.getElementById('pokemon-image');
 const pokemonName = document.getElementById('pokemon-name');
 const pokemonId = document.getElementById('pokemon-id');
+const pokemonType = document.getElementById('pokemon-type');
 const pokemonHeight = document.getElementById('pokemon-height');
 const pokemonWeight = document.getElementById('pokemon-weight');
 const pokemonAbility = document.getElementById('pokemon-ability');
@@ -47,6 +48,15 @@ async function fetchPokemonData(pokemonName) {
 
       if (index < data.abilities.length - 1) {
         pokemonAbility.textContent += ', ';
+      }
+    });
+
+    //Get Pokemon Types
+    pokemonType.textContent = '';
+    data.types.forEach((type, index) => {
+      pokemonType.textContent += type.type.name;
+      if (index < data.types.length - 1) {
+        pokemonType.textContent += ' / ';
       }
     });
 
